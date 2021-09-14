@@ -1,0 +1,12 @@
+name = "DirectSamplingPEPS"
+uuid = "b94ed879-d3fd-46fa-921b-5e10af140349"
+authors = ["Tom <tom.vieijra@ugent.be>"]
+version = "0.1.0"
+
+[deps]
+KrylovKit = "0b1a1467-8014-51b9-945f-bf0ae24f4b77"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+NPZ = "15e1cf62-19b3-5cfa-8e77-841668bca605"
+Parameters = "d96e819e-fc66-5662-9728-84c9c7592b0a"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
+TensorOperations = "6aa20fa7-93e2-5fca-9bc0-fbd0db3c71a2"
