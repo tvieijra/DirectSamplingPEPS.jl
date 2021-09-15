@@ -64,7 +64,7 @@ let
     fill!(loc_gradients, 0)
 
     get_samples_mcmc_direct!(peps, psi_sqs, norms, samples, samplecut, 100, 1, true, marginals)
-    energy, norm_peps = get_energy!(peps, x->get_ising_mels(x,J,sign_rule,false), psi_sqs, samples, loc_energies, contractcut, rotsymm, true)
+    energy, norm_peps = get_energy!(peps, x->get_heisenberg_mels(x,J,sign_rule,false), psi_sqs, samples, loc_energies, contractcut, rotsymm, true)
     get_local_log_gradients(peps, samples, norm_peps, loc_energies, loc_gradients, contractcut, rotsymm)
     update_vec, gradients = stochastic_reconfiguration(loc_gradients, psi_sqs, loc_energies, diagshift, tol)
     update!(opt, peps, update_vec)
